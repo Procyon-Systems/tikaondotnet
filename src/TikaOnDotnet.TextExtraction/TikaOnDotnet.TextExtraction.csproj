@@ -1,14 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net462;netcoreapp3.1;net6.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="IKVM" Version="8.2.1" />
+        <PackageReference Include="IKVM" Version="8.7.5" />
         <PackageReference Include="System.Net.Http" Version="4.3.4" />
-        <PackageReference Include="TikaOnDotNet" Version="2.4.1" />
+        <PackageReference Include="IKVM.Maven.SDK" Version="1.6.8" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TikaOnDotnet\TikaOnDotnet.csproj" />
+    </ItemGroup>
+
+    <ItemGroup >
+        <MavenReference Include="org.apache.tika:tika-app" Version="2.9.1" />
     </ItemGroup>
 
 </Project>

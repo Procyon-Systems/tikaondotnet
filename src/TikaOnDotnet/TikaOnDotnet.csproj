@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-      <TargetFrameworks>net462;netcoreapp3.1</TargetFrameworks>
+      <TargetFrameworks>net462;net8.0</TargetFrameworks>
       <Version>2.4.1</Version>
       <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
     <PropertyGroup>
-        <TikaUrl>https://dlcdn.apache.org/tika/2.4.1/tika-app-2.4.1.jar</TikaUrl>
+        <TikaUrl>https://dlcdn.apache.org/tika/2.9.1/tika-app-2.9.1.jar</TikaUrl>
     </PropertyGroup>
 
     <Target Name="DownloadTikaJar" BeforeTargets="BeforeResolveReferences">
@@ -37,7 +37,7 @@
     </Target>
 
     <ItemGroup>
-        <PackageReference Include="IKVM" Version="8.2.1" />
+        <PackageReference Include="IKVM" Version="8.7.5" />
     </ItemGroup>
 
     <ItemGroup >

@@ -22,7 +22,7 @@ Tika is a Apache Foundation open source project written in Java. It may sound sc
             <group targetFramework=".NETFramework4.6.2">
                 <dependency id="IKVM" version="8.2.1" />
             </group>
-            <group targetFramework="netcoreapp3.1">
+            <group targetFramework="net8.0">
                 <dependency id="IKVM" version="8.2.1" />
             </group>
         </dependencies>
@@ -31,7 +31,7 @@ Tika is a Apache Foundation open source project written in Java. It may sound sc
         <file src="..\..\LICENSE" target="LICENSE" />
         <file src="..\..\readme.md" target="docs\" />
         <file src="..\..\icon.png" target="images\" />
-        <file src="bin\Release\netcoreapp3.1\tika.core.dll" target="lib\netcoreapp3.1\TikaOnDotNet.dll" />
+        <file src="bin\Release\net8.0\tika.core.dll" target="lib\net8.0\TikaOnDotNet.dll" />
         <file src="bin\Release\net462\tika.framework.dll" target="lib\net462\TikaOnDotNet.dll" />
     </files>
 </package>
