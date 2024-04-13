@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Version>2.4.1</Version>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="IKVM" Version="8.7.5" />
+        <PackageReference Include="IKVM.Maven.SDK" Version="1.6.8" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <IkvmReference Include="..\tika-app-*.jar">
+            <AssemblyName>tika.core</AssemblyName>
+        </IkvmReference>
+        <ContentWithTargetPath Include="$(OutDir)tika.core.dll">
+            <TargetPath>tika.core.dll</TargetPath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </ContentWithTargetPath>
+    </ItemGroup>
+</Project>
