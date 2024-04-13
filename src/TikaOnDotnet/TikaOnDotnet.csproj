@@ -7,7 +7,7 @@
   </PropertyGroup>
 
     <PropertyGroup>
-        <TikaUrl>https://dlcdn.apache.org/tika/2.9.1/tika-app-2.9.1.jar</TikaUrl>
+        <TikaUrl>https://dlcdn.apache.org/tika/2.9.2/tika-app-2.9.2.jar</TikaUrl>
     </PropertyGroup>
 
     <Target Name="DownloadTikaJar" BeforeTargets="BeforeResolveReferences">
