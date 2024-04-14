@@ -2,12 +2,14 @@
 
   <PropertyGroup>
       <TargetFrameworks>net462;net8.0</TargetFrameworks>
-      <Version>2.4.2</Version>
+      <Version>2.4.1</Version>
       <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
     <PropertyGroup>
-        <TikaUrl>https://dlcdn.apache.org/tika/2.9.2/tika-app-2.9.2.jar</TikaUrl>
+        <!-- This doesn't work due to an issue in IKVM, whereas it does not support class version 65 -->
+        <!-- <TikaUrl>https://dlcdn.apache.org/tika/2.9.2/tika-app-2.9.2.jar</TikaUrl> -->
+        <TikaUrl >https://archive.apache.org/dist/tika/2.9.1/tika-app-2.9.1.jar</TikaUrl>
     </PropertyGroup>
 
     <Target Name="DownloadTikaJar" BeforeTargets="BeforeResolveReferences">
@@ -37,7 +39,7 @@
     </Target>
 
     <ItemGroup>
-        <PackageReference Include="IKVM" Version="8.7.5" />
+        <PackageReference Include="IKVM" Version="8.7.6" />
     </ItemGroup>
 
     <ItemGroup >

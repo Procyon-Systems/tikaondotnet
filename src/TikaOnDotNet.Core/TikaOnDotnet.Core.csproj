@@ -11,7 +11,7 @@
   </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="IKVM" Version="8.7.5" />
+        <PackageReference Include="IKVM" Version="8.7.6" />
         <PackageReference Include="IKVM.Maven.SDK" Version="1.6.8" />
     </ItemGroup>
 
